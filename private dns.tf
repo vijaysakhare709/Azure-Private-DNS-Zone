@@ -17,7 +17,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "example" {
 # Resource-3 Interanal load balancer DNS A record
 
 resource "azurerm_private_dns_a_record" "example" {
-  name                = "applb"
+  name                = "www" #
   zone_name           = azurerm_private_dns_zone.priavte_dns_zone.name
   resource_group_name = azurerm_resource_group.vijay.name
   ttl                 = 300
